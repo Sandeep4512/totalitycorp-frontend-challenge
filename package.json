@@ -14,12 +14,20 @@
     "react-filter-search": "^1.1.11",
     "react-icons": "^4.4.0",
     "react-lightbox-component": "^1.2.1",
+    "react-lottie": "^1.2.3",
     "react-phone-input-2": "^2.15.1",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-use-cart": "^1.13.0",
     "web-vitals": "^2.1.4"
   },
+  "overrides": {
+    "react-lottie": {
+      "react": "^0.14.7 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0"
+    }
+  },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
